@@ -14,16 +14,20 @@ public class JavaAnagram {
 	}
 
 	private static boolean isAnagram(String a, String b) {
+                a = a.toLowerCase();
+		b = b.toLowerCase();
+		char[] c = a.toCharArray();
+		char[] d = b.toCharArray();
 
-		for(int i =0; i<a.length();i++) {
-		if(a.charAt(i) == b.charAt(i))
+		Arrays.sort(c);
+		Arrays.sort(d);
+
+		if (Arrays.equals(c, d)) {
 			return true;
-		else
-		return false;
+		} else
+			return false;
+
 		
-				
-	}
-		return false;
 
 }
 }
