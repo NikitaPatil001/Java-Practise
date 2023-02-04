@@ -5,3 +5,5 @@ node_modules/
 target/
 .settings/
 /* ALL DATA ADDED*/
+.classpath/
+.project/
